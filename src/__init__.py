@@ -1,1 +1,1 @@
-from src.main import Json2Xml
+from json2xml.main import Json2Xml

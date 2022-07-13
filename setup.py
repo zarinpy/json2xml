@@ -15,5 +15,5 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.8',
     ],
-    py_modules=['src.main:Json2Xml'],
+    py_modules=['src.json2xml.main:Json2Xml'],
 )
