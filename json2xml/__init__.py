@@ -5,7 +5,15 @@ __all__ = ["Json2Xml"]
 
 
 class Json2Xml(object):
-    def __init__(self, json_obj: Any, line_spacing: str = ""):
+    def __init__(self, json_obj: dict, line_spacing: str = ""):
+
+        if type(json_obj) is str:
+            raise ValueError("json_obj cannot be string")
+        if type(json_obj) is list:
+            raise ValueError("json_obj cannot be list")
+        if type(json_obj) is not dict:
+            raise ValueError("json_obj must be a dict")
+
         head = """<?xml version="1.0" encoding="UTF-8"?><data>"""
         self.data = head + self._json2xml(json_obj, line_spacing) + "</data>"
 
