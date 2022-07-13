@@ -7,9 +7,9 @@ setup(
     include_package_data=True,
     license='MIT',
     description='convert json to xml',
-    url='',
+    url='https://github.com/zarinpy/json2xml',
     author='zarinpy',
-    author_email='',
+    author_email='zarinpy@gmail.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
