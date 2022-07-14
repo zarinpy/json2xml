@@ -1,5 +1,7 @@
 import xml.etree.cElementTree as e
+
 from typing import Any
+
 
 __all__ = ["Json2Xml"]
 
@@ -18,7 +20,7 @@ class Json2Xml(object):
         self.data = head + self._json2xml(json_obj, line_spacing) + "</data>"
 
     def _json2xml(self, json_obj, line_spacing):
-        result_list = list()
+        result_list = []
         json_obj_type = type(json_obj)
 
         if json_obj_type is list:

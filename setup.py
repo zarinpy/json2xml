@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
 
 setup(
     name='json2xml',
@@ -9,12 +10,14 @@ setup(
     description='convert json to xml',
     url='https://github.com/zarinpy/json2xml',
     author='zarinpy',
+    extras_require={
+        'test': ['pytest'],
+    },
     author_email='zarinpy@gmail.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.9',
     ],
     py_modules=['json2xml.src:Json2Xml'],
