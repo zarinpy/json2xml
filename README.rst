@@ -15,7 +15,26 @@ use Json2Xml class to convert json to xml
 .. code:: python
 
     from json2xml import Json2Xml
-    json2xml.json2xml(dict_object, line_space="")
+    d={
+            "name": "John",
+            "age": 30,
+            "cars": [{"name": "Ford"}],
+            "family": "johnson",
+        }
+    result = json2xml(d)
+    print(result)
+
+.. code:: xml
+
+    <name>John</name>
+    <age>30</age>
+    <cars>
+        <name>Ford</name>
+    </cars>
+    <family>johnson</family>
+
+"""
+
 
 License
 -------
